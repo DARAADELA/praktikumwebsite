@@ -6,16 +6,16 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f8ff; /* Warna latar belakang yang cerah */
+            background-color: #f0f8ff;
             margin: 0;
             padding: 20px;
         }
 
         h1 {
             text-align: center;
-            color: white; /* Warna teks judul */
-            background-color: #007bff; /* Warna biru untuk latar belakang judul */
-            border: 2px solid #f6ff54; /* Border berwarna untuk judul */
+            color: white;
+            background-color: #007bff;
+            border: 2px solid #f6ff54;
             padding: 10px;
             border-radius: 5px;
             margin-bottom: 20px;
@@ -26,51 +26,74 @@
         }
 
         img {
-            width: 300px; /* Ukuran gambar */
-            height: auto; /* Proporsional */
-            border: 2px solid #d2d2d2; /* Border gambar */
-            border-radius: 5px; /* Sudut melengkung pada gambar */
+            width: 300px;
+            height: auto;
+            border: 2px solid #d2d2d2;
+            border-radius: 5px;
         }
 
         .bahan {
-            background-color: #ffff99; /* Background bahan berwarna kuning */
+            background-color: #ffff99;
             padding: 10px;
             margin: 10px 0;
             border-radius: 5px;
         }
 
         .cara-pembuatan {
-            background-color: #ffcccb; /* Background cara berwarna pink */
+            background-color: #ffcccb;
             padding: 10px;
             margin: 10px 0;
             border-radius: 5px;
         }
 
         .bahan ul, .cara-pembuatan ul {
-            list-style-type: none; /* Menghilangkan bullet points */
-            padding: 0; /* Menghilangkan padding default */
+            list-style-type: none;
+            padding: 0;
         }
 
         .bahan li, .cara-pembuatan li {
-            background-color: #ffe4b5; /* Background item bahan dan cara berwarna kuning muda */
+            background-color: #ffe4b5;
             padding: 10px;
             margin: 5px 0;
             border-radius: 5px;
-            color: #000; /* Warna teks hitam untuk kontras */
+            color: #000;
         }
 
         footer {
             text-align: center;
             margin-top: 20px;
             padding: 10px;
-            background-color: #333; /* Warna latar belakang footer */
-            color: white; /* Warna teks footer */
+            background-color: #333;
+            color: white;
+        }
+
+        /* Styling untuk tombol */
+        .action-buttons {
+            margin-top: 20px;
+        }
+
+        .action-buttons button {
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            border: none;
+            color: white;
+        }
+
+        #cekResepBtn {
+            background-color: #28a745;
+        }
+
+        #cetakResepBtn {
+            background-color: #dc3545;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Resep Nasi Goreng</h1>
+        <h1 id="resepNama">Resep Nasi Goreng</h1>
         <img src="https://cdn1-production-images-kly.akamaized.net/285eQpDwdxx1xhh5RFb38KtfhBY=/0x148:1920x1230/1280x720/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3093328/original/069244600_1585909700-fried-2509089_1920.jpg" alt="Tempe Mendoan">
         
         <div class="bahan">
@@ -91,13 +114,34 @@
                 <li>setelah halus tumis bumbu sampai harum.</li>
                 <li>goreng telur lalu orak arik</li>
                 <li>masukan nasi dan penyedap rasa, aduk hingga merata dan wangi</li>
-                 <li>nasi goreng siap disajikan</li>
+                <li>nasi goreng siap disajikan</li>
             </ul>
+        </div>
+
+        <!-- Tombol Cek dan Cetak -->
+        <div class="action-buttons">
+            <button id="cekResepBtn">Cek Nama Resep</button>
+            <button id="cetakResepBtn">Cetak Resep</button>
         </div>
     </div>
 
     <footer>
         @Copyright [DARA ADELA] 2024
     </footer>
+
+    <script>
+        // Ambil elemen h1 yang berisi nama resep
+        const resepNama = document.getElementById('resepNama').textContent;
+
+        // Fungsi untuk menampilkan nama resep di console
+        document.getElementById('cekResepBtn').addEventListener('click', function() {
+            console.log("Nama resep:", resepNama);
+        });
+
+        // Fungsi untuk mencetak halaman resep
+        document.getElementById('cetakResepBtn').addEventListener('click', function() {
+            window.print();
+        });
+    </script>
 </body>
 </html>
