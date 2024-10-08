@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Menu Restoran [DARA ADELA]</title>
+    
+    <style>
+        body {
+            font-family: 'TIMES NEW ROMAN', sans-serif;
+        }
+
+        /* General Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 2px solid #000;
+            margin-top: 20px;
+        }
+
+        thead {
+            background-color: #f2a365;
+        }
+
+        /* Warna background untuk baris ganjil dan genap */
+        tbody tr:nth-child(odd) {
+            background-color: #ffc0cb; /* Warna latar untuk baris ganjil */
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #e9e9e9; /* Warna latar untuk baris genap */
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #000;
+            text-align: left;
+        }
+
+        td a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        td img {
+            width: 100px;
+            height: auto;
+        }
+
+        /* Heading and Logo */
+        header {
+            text-align: center;
+            margin-top: 20px;
+            background-color: #800080; /* Warna ungu pada header */
+            padding: 20px;
+            color: white;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: bold; /* Font tebal pada judul */
+            margin-bottom: 10px;
+        }
+
+        #logo {
+            width: 200px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        nav a {
+            text-decoration: none;
+            margin: 0 15px;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            font-family: 'Verdana', sans-serif;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #444;
+            color: white;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Styling untuk form pemesanan */
+        .order-form {
+            margin-top: 20px;
+        }
+
+        .order-form h2 {
+            margin-bottom: 10px;
+        }
+
+        .order-form input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .order-form button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .order-form button:hover {
+            background-color: #0056b3;
+        }
+    </style>    
+</head>
+<body>
+    <!-- Heading dan Logo -->
+    <header>
+        <h1>Daftar Menu Restoran DARA ADELA</h1>
+        <img src="https://files.oaiusercontent.com/file-BmmDPWlAAA4MI6JnIrd4PrQ4?se=2024-10-02T22%3A59%3A31Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D47a9eae9-c271-466a-896e-b94df2ea2e20.webp&sig=D7NWXz5uXu0LFOzOYVQ6aN9MqDeUHfyz8FCyCpNZV2Q%3D" alt="Logo Restoran" id="logo">
+        <nav>
+            <a href="index.html">MENU</a> |
+            <a href="about.html">ABOUT</a>
+        </nav>
+    </header>
+
+    <!-- Tabel Menu -->
+    <table>
+        <thead title="Daftar Menu">
+            <tr>
+                <th>Nama Makanan</th>
+                <th>Harga</th>
+                <th>Tautan</th>
+                <th>Gambar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nasi Goreng</td>
+                <td>Rp 25.000</td>
+                <td><a href="nasigoreng.html">Lihat Detail</a></td>
+                <td><img src="https://img.kurio.network/77GSRizkh7ZeT0cp7P8j1JG0ziY=/440x440/filters:quality(80):watermark(https://kurio-img.kurioapps.com/21/04/15/df401e7c-7b29-428a-9a16-aad1fafe07a1.png,0,5p,0,22)/https://kurio-img.kurioapps.com/20/10/10/a7e9eaa0-1c22-42b0-a11f-0a5ad1d30126.jpeg" alt="Gambar Nasi Goreng"></td>
+            </tr>
+            <tr>
+                <td>Bakso Daging</td>
+                <td>Rp 20.000</td>
+                <td><a href="bakso.html">Lihat Detail</a></td>
+                <td><img src="https://www.tupperware.co.id/service/appng/tupperware-products/webservice/recipeImages/011633_666x468.jpg" alt="Gambar Bakso"></td>
+            </tr>
+            <tr>
+                <td>Mie Ayam</td>
+                <td>Rp 20.000</td>
+                <td><a href="mieayam.html">Lihat Detail</a></td>
+                <td><img src="https://asset.kompas.com/crops/krSLAkJhiYmOL3g6b6c-x_9p1sI=/98x0:944x564/750x500/data/photo/2023/04/14/6438d1d8bc59b.jpeg" alt="Gambar Mie Ayam"></td>
+            </tr>
+            <tr>
+                <td>Sate Ayam</td>
+                <td>Rp 30.000</td>
+                <td><a href="sateayam.html">Lihat Detail</a></td>
+                <td><img src="https://img-global.cpcdn.com/recipes/a6ca9f36b02b089b/680x482cq70/sate-ayam-khas-madura-foto-resep-utama.webp" alt="Gambar Sate Ayam"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Form Pemesanan -->
+    <div class="order-form">
+        <h2>Pilih Makanan yang Ingin Dipesan</h2>
+        <form id="orderForm">
+            <label><input type="checkbox" name="makanan" value="Nasi Goreng"> Nasi Goreng</label><br>
+            <label><input type="checkbox" name="makanan" value="Bakso Daging"> Bakso Daging</label><br>
+            <label><input type="checkbox" name="makanan" value="Mie Ayam"> Mie Ayam</label><br>
+            <label><input type="checkbox" name="makanan" value="Sate Ayam"> Sate Ayam</label><br>
+            <button type="button" id="submitOrder">Selesai</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        @Copyright [DARA ADELA] 2024
+    </footer>
+
+    <script>
+        // Fungsi untuk menangani pengiriman pesanan
+        document.getElementById('submitOrder').addEventListener('click', function() {
+            // Ambil semua checkbox yang dipilih
+            const checkboxes = document.querySelectorAll('input[name="makanan"]:checked');
+            let pesanan = [];
+
+            // Masukkan nilai checkbox yang dipilih ke array
+            checkboxes.forEach((checkbox) => {
+                pesanan.push(checkbox.value);
+            });
+
+            // Tampilkan hasil pemesanan di console
+            if (pesanan.length > 0) {
+                console.log("Makanan yang dipesan:", pesanan.join(', '));
+            } else {
+                console.log("Tidak ada makanan yang dipilih.");
+            }
+        });
+    </script>
+</body>
+</html>
